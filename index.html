@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean-Baptiste Berthod — Développeur Full-Stack</title>
+  <meta name="description" content="Portfolio de Jean-Baptiste Berthod, développeur web & applications full-stack à Grenoble. Alternance recherchée." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background glow -->
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="dot"></span>
+        <span>Jean-Baptiste</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="links" id="menu">
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-left">
+        <p class="badge">
+          <span class="pulse"></span>
+          Alternance recherchée • Grenoble
+        </p>
+
+        <h1>
+          Développeur <span class="grad">Web & Applications</span><br />
+          Full-Stack
+        </h1>
+
+        <p class="subtitle">
+          Je construis des interfaces modernes et des applications solides (front + back + base de données).
+          Objectif : intégrer une équipe pour apprendre vite et livrer du concret.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projets">Voir mes projets</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+
+        <div class="chips">
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Java</span>
+          <span>MySQL</span>
+          <span>Git/GitHub</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">
+            <!-- optionnel : remplace par ta photo -->
+            <img src="assets/profile.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-fallback');" />
+            <span class="initials">JB</span>
+          </div>
+          <div>
+            <h2 class="name">Jean-Baptiste BERTHOD</h2>
+            <p class="meta">Grenoble • Full-Stack • Alternance</p>
+          </div>
+        </div>
+
+        <div class="quick">
+          <div class="q">
+            <span class="label">Email</span>
+            <a href="mailto:tonmail@gmail.com">jeanbaptiste.ber2@gmail.com</a>
+          </div>
+          <div class="q">
+            <span class="label">Téléphone</span>
+            <a href="tel:+33600000000">+33 6 81 45 17 19</a>
+          </div>
+          <div class="q">
+            <span class="label">GitHub</span>
+            <a href="https://github.com/tongithub" target="_blank" rel="noreferrer">JiB38.github.io</a>
+          </div>
+          <!--<div class="q">
+            <span class="label">LinkedIn</span>
+            <a href="https://linkedin.com/in/tonlinkedin" target="_blank" rel="noreferrer">linkedin.com/in/tonlinkedin</a>
+          </div>label-->
+        </div>
+
+        <div class="mini">
+          <p><strong>Stack visé :</strong> Full-Stack (Front + Back + BDD)</p>
+          <p><strong>Disponibilité :</strong> dès que possible</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section container" id="projets">
+      <div class="section-head">
+        <h2>Projets</h2>
+        <!--<p>3 projets propres valent mieux que 15 projets vides. Mets des captures + un README GitHub.</p>-->
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="gallery phone-frame">
+            <img src="assets/veilleuse1.jpg" class="gallery-img active">
+            <img src="assets/veilleuse2.jpg" class="gallery-img">
+            <img src="assets/veilleuse3.jpg" class="gallery-img">
+          </div>
+
+          <div class="gallery-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <div class="card-body">
+            <h3>Veilleuse (Android / Java)</h3>
+            <p>
+              Application avec modes ambiance, timer, actions Material Design, logique d’animations et gestion des états.
+            </p>
+            <div class="tags">
+              <span>Java</span><span>Android</span><span>Material</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noreferrer">Démo / vidéo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb thumb-fallback">
+            <span class="thumb-title">Projet en cours</span>
+          </div>
+
+          <div class="card-body">
+            <h3>Application JavaFX + MySQL</h3>
+               <p>
+      Application de gestion avec architecture POO et base de données relationnelle.
+      Interface JavaFX connectée à MySQL (CRUD).
+              </p>
+
+          <div class="tags">
+            <span>Java</span>
+            <span>JavaFX</span>
+            <span>MySQL</span>
+          </div>
+
+          <div class="construction">
+            <span class="dot"></span>
+            <span>En cours de finalisation — Démo bientôt disponible</span>
+          </div>
+        </div>
+        </article>
+
+        <article class="card">
+          <div class="project-media">
+
+            <!-- Images 
+            <div class="project-gallery">
+              <img src="assets/site1.jpg" class="project-img active">
+              <img src="assets/site2.jpg" class="project-img">
+            </div>
+
+            <div class="project-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+            -->
+            <!-- Vidéo -->
+            <div class="premium-video-wrapper">
+              <video controls preload="metadata" poster="assets/site-preview.jpg">
+                <source src="assets/site1-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+          
+          <div class="card-body">
+            <h3>Site / App web (Full-Stack)</h3>
+            <p>
+              Front moderne + appels API + formulaires + base de données.
+            </p>
+            <div class="tags">
+              <span>JS</span><span>API</span><span>SQL</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section container" id="competences">
+      <div class="section-head">
+        <h2>Compétences</h2>
+      </div>
+
+      <div class="skills">
+        <div class="panel">
+          <h3>Front-End</h3>
+          <ul>
+            <li>HTML / CSS (responsive, flex/grid)</li>
+            <li>JavaScript (DOM, fetch, async)</li>
+            <li>React (bases, composants, routing)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Back-End & BDD</h3>
+          <ul>
+            <li>Java (POO, architecture, bonnes pratiques)</li>
+            <li>API REST (principes, JSON)</li>
+            <li>MySQL (tables, relations, requêtes)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Outils</h3>
+          <ul>
+            <li>Git / GitHub (branches, commits)</li>
+            <li>VS Code / Android Studio</li>
+            <li>Debug / tests basiques</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section class="section container" id="apropos">
+      <div class="section-head">
+        <h2>À propos</h2>
+      </div>
+
+      <div class="about">
+        <div class="about-card">
+          <h3>Mon profil</h3>
+          <p>
+            J’ai un BTS Informatique de Gestion et une formation de programmation (2022). Aujourd’hui je suis
+            dans une démarche claire : intégrer une entreprise en alternance pour progresser rapidement et livrer
+            des fonctionnalités utiles en équipe.
+          </p>
+          <p>
+            Je suis à l’aise avec la logique, la rigueur et la persévérance — et je mets un point d’honneur à avoir
+            des projets propres, lisibles et présentables.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Ce que je cherche</h3>
+          <ul class="ticks">
+            <li>Alternance Développeur Web & Applications (Full-Stack)</li>
+            <li>Projets concrets (front, back, BDD)</li>
+            <li>Équipe bienveillante + code review + méthode</li>
+            <li>Grenoble et alentours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <!--<p>Tu peux copier-coller ce message dans tes emails aux entreprises.</p>-->
+      </div>
+
+      <div class="contact">
+        <div class="contact-card">
+          <h3>Me joindre</h3>
+
+<p class="contact-line">
+  <span>Téléphone</span>
+  <a href="tel:+33681451719">+33 6 81 45 17 19</a>
+</p>
+
+<p class="contact-line">
+  <span>Email</span>
+  <a href="mailto:jeanbaptiste.ber2@gmail.com">
+    jeanbaptiste.ber2@gmail.com
+  </a>
+</p>
+
+<p class="contact-line">
+  <span>GitHub</span>
+  <a href="https://github.com/JiB38" target="_blank" rel="noreferrer">
+    github.com/JiB38
+  </a>
+</p>
+          
+      <!--    <p class="contact-line"><span>LinkedIn</span> <a href="https://linkedin.com/in/tonlinkedin" target="_blank" rel="noreferrer">linkedin.com/in/tonlinkedin</a></p>-->
+
+          <div class="copybox">
+            <p class="copytitle">Message prêt à envoyer :</p>
+            <textarea id="message" rows="6">Bonjour,
+
+Je me permets de vous contacter car je recherche une alternance à Grenoble en Développement Web & Applications (Full-Stack) dans le cadre d’un Bachelor.
+
+Je peux vous envoyer mon CV et vous présenter mes projets (GitHub/portfolio). Seriez-vous disponible pour un échange rapide ?
+
+Merci et bonne journée,
+Jean-Baptiste BERTHOD</textarea>
+            <button class="btn btn-small" id="copyBtn">Copier le message</button>
+            <p class="hint" id="copyHint" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Checklist avant envoi</h3>
+          <ul class="ticks">
+            <li>CV à jour (PDF)</li>
+            <li>GitHub propre (README + captures)</li>
+            <li>Portfolio en ligne (GitHub Pages)</li>
+            <li>1 mail personnalisé par entreprise</li>
+            <li>Relance J+3 et J+7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Jean-Baptiste BERTHOD • Portfolio • Grenoble</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
