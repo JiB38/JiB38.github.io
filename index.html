@@ -271,56 +271,88 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section container" id="contact">
-      <div class="section-head">
-        <h2>Contact</h2>
+<!-- CONTACT -->
+<section class="section container" id="contact">
+  <div class="section-head">
+    <h2>Contact</h2>
+  </div>
+
+  <div class="contact">
+
+    <!-- INFOS CONTACT -->
+    <div class="contact-card">
+      <h3>Me joindre</h3>
+
+
+
+      <p class="contact-line">
+        <span>Téléphone</span>
+        <a href="tel:+33681451719">+33 6 81 45 17 19</a>
+      </p>
+
+      <p class="contact-line">
+        <span>Email</span>
+        <a href="mailto:jeanbaptiste.ber2@gmail.com">
+          jeanbaptiste.ber2@gmail.com
+        </a>
+      </p>
+
+      <p class="contact-line">
+        <span>GitHub</span>
+        <a href="https://github.com/JiB38" target="_blank" rel="noreferrer">
+          github.com/JiB38
+        </a>
+      </p>
+
+      <p class="contact-line">
+        <span>LinkedIn</span>
+        <a href="https://linkedin.com/in/jbberthod" target="_blank" rel="noreferrer">
+          linkedin.com/in/jbberthod
+        </a>
+      </p>
+    </div>
+
+    <!-- FORMULAIRE -->
+      <div class="contact-card">
+        <h3>Envoyer un message</h3>
+        <p>
+          Une question, une proposition ou une opportunité ?  
+          N'hésitez pas à m'envoyer un message.
+        </p>
+
+        <form action="https://formspree.io/f/xzdjapzw" method="POST" class="contact-form">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Votre nom"
+            required
+          >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Votre email"
+            required
+          >
+
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Votre message"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">
+            Envoyer
+          </button>
+
+        </form>
       </div>
 
-      <div class="contact">
-        <div class="contact-card">
-          <h3>Me joindre</h3>
-
-<p class="contact-line">
-  <span>Téléphone</span>
-  <a href="tel:+33681451719">+33 6 81 45 17 19</a>
-</p>
-
-<p class="contact-line">
-  <span>Email</span>
-  <a href="mailto:jeanbaptiste.ber2@gmail.com">
-    jeanbaptiste.ber2@gmail.com
-  </a>
-</p>
-
-<p class="contact-line">
-  <span>GitHub</span>
-  <a href="https://github.com/JiB38" target="_blank" rel="noreferrer">github.com/JiB38
-  </a>
-</p>
-          
-<p class="contact-line">
-  <span>LinkedIn</span> 
-  <a href="https://linkedin.com/in/jbberthod" target="_blank" rel="noreferrer">linkedin.com/in/jbberthod
-  </a>
-</p>
-
-          <div class="copybox">
-            <p class="copytitle">Message prêt à envoyer :</p>
-            <textarea id="message" rows="6">Bonjour,
-
-Je me permets de vous contacter car je recherche une alternance à Grenoble en Développement Web & Applications (Full-Stack) dans le cadre d’un Bachelor.
-
-Je peux vous envoyer mon CV et vous présenter mes projets (GitHub/portfolio). Seriez-vous disponible pour un échange rapide ?
-
-Merci et bonne journée,
-Jean-Baptiste BERTHOD</textarea>
-            <button class="btn btn-small" id="copyBtn">Copier le message</button>
-            <p class="hint" id="copyHint" aria-live="polite"></p>
-          </div>
-        </div>
-
-        <div class="contact-card">
+    </div>
+  </section>
+   <!--     <div class="contact-card">
           <h3>Checklist avant envoi</h3>
           <ul class="ticks">
             <li>CV à jour (PDF)</li>
@@ -330,8 +362,8 @@ Jean-Baptiste BERTHOD</textarea>
             <li>Relance J+3 et J+7</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </div>        
+    </section>-->
   </main>
 
   <footer class="footer container">

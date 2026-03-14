@@ -16,9 +16,7 @@ document.querySelectorAll("#menu a").forEach(a => {
   });
 });
 
-const copyBtn = document.getElementById("copyBtn");
-const message = document.getElementById("message");
-const copyHint = document.getElementById("copyHint");
+// Aucun JavaScript n'est nécessaire pour le formulaire Formspree
 
 copyBtn?.addEventListener("click", async () => {
   try {
