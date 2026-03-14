@@ -52,3 +52,17 @@ projectDots.forEach((dot, index) => {
     dot.classList.add("active");
   });
 });
+
+let robotSlideIndex = 0;
+
+function showRobotSlide(index) {
+  const carousel = document.querySelector(".robot-carousel");
+  const slides = carousel.querySelectorAll(".robot-slide");
+  const dots = carousel.querySelectorAll(".dot");
+
+  slides.forEach((slide) => slide.classList.remove("active"));
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}

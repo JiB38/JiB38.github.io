@@ -140,30 +140,46 @@
           </div>
         </article>
 
-        <article class="card">
-          <div class="thumb thumb-fallback">
-            <span class="thumb-title">Projet en cours</span>
+        <article class="project-card">
+          <div class="project-gallery">
+            <div class="robot-carousel">
+              <img src="assets/robotboxeur1.png" alt="Robot Boxeur capture 1" class="robot-slide active">
+              <img src="assets/robotboxeur2.png" alt="Robot Boxeur capture 2" class="robot-slide">
+              <img src="assets/robotboxeur3.png" alt="Robot Boxeur capture 3" class="robot-slide">
+
+              <div class="carousel-dots">
+                <span class="dot active" onclick="showRobotSlide(0)"></span>
+                <span class="dot" onclick="showRobotSlide(1)"></span>
+                <span class="dot" onclick="showRobotSlide(2)"></span>
+              </div>
+            </div>
           </div>
 
-          <div class="card-body">
-            <h3>Application JavaFX + MySQL</h3>
-               <p>
-      Application de gestion avec architecture POO et base de données relationnelle.
-      Interface JavaFX connectée à MySQL (CRUD).
-              </p>
+          <div class="project-content">
+            <h3>Robot Boxeur</h3>
+            <p>
+              Projet Java/JavaFX orienté objet autour d’un robot boxeur.
+              Développement d’une interface graphique avec gestion des tours,
+              des points de vie et de la logique de combat.
+            </p>
 
-          <div class="tags">
-            <span>Java</span>
-            <span>JavaFX</span>
-            <span>MySQL</span>
-          </div>
+            <div class="project-tech-tags">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>POO</span>
+            </div>
 
-          <div class="construction">
-            <span class="dot"></span>
-            <span>En cours de finalisation — Démo bientôt disponible</span>
+            <div class="card-actions">
+              <a href="https://github.com/JiB38" class="btn btn-small" target="_blank" rel="noreferrer">
+               GitHub
+              </a>
+            </div>
+            
           </div>
-        </div>
         </article>
+  <!--      <a href="https://github.com/JiB38" class="btn btn-small" target="_blank" rel="noreferrer">
+  Voir sur GitHub
+</a>     -->
 
         <article class="card">
           <div class="project-media">
