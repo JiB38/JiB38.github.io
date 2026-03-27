@@ -66,3 +66,16 @@ function showRobotSlide(index) {
   slides[index].classList.add("active");
   dots[index].classList.add("active");
 }
+
+function showVeilleuseSlide(index) {
+  const gallery = document.getElementById("veilleuse-gallery");
+
+  const slides = gallery.querySelectorAll(".gallery-img");
+  const dots = document.querySelectorAll("#veilleuse-gallery + .gallery-dots .dot");
+
+  slides.forEach((slide) => slide.classList.remove("active"));
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
