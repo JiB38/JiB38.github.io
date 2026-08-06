@@ -984,3 +984,23 @@ textarea{
   font-weight: 800;
   font-size: 12px;
 }
+
+/*
+.btn-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #f4c542;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-cv:hover {
+    background: #ffd95c;
+    transform: translateY(-2px);
+}
+
+*/
